@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        svg {
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+    <link rel="stylesheet" href="normalize.css">
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg">
+        <style>
+            .shape {
+                stroke-width: 5px;
+            }
+
+            .animated-circle {
+                animation: color-change 3s infinite;
+            }
+
+            @keyframes color-change {
+                0% {
+                    stroke: purple;
+                    fill: orange;
+                }
+
+                50% {
+                    stroke: pink;
+                    fill: lightblue;
+                }
+
+                100% {
+                    stroke: purple;
+                    fill: orange;
+                }
+            }
+        </style>
+
+
+        <rect x="10" y="10" width="80" height="80" stroke="red" fill="yellow" class="shape" />
+
+
+        <rect x="110" y="10" width="120" height="60" stroke="blue" fill="green" class="shape" />
+
+
+        <circle cx="250" cy="150" r="40" stroke="purple" fill="orange" class="shape animated-circle" />
+
+
+        <ellipse cx="400" cy="150" rx="60" ry="40" stroke="black" fill="cyan" class="shape" />
+    </svg>
+
+
+</body>
+
+</html>
